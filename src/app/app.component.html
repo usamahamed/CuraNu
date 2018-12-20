@@ -1,0 +1,108 @@
+
+
+<!-- Header section -->
+<header class="header-container">
+  <nav>
+    <div class="nav-container">
+     <a [routerLink]="['/']"><img src="../assets/elements/Bitmap.png" alt="logo"/></a>
+       <div class="logo-text logo-text_mobile"><span>Cura</span>Nu</div>
+      <div class="logo-subtitle logo-subtitle_mobile">Zorg en welzijn</div>
+
+      <div class="btn">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+    </div>
+
+    <ul>
+      <li><a href="#">Groepen</a></li>
+      <li><a [routerLink]="['/contact']">Contact</a></li>
+      <li><a href="#">FAQ</a></li>
+      <li><a href="#">Smoelenboek</a></li>
+      <li><a href="#">Microblog</a></li>
+      <li><a href="#">Over ons</a></li>
+    </ul>
+
+    
+    
+  </nav>
+
+ <div class="header-icons">
+    <span><i class="fa fa-cog"></i></span>
+    <span><i class="far fa-bell"></i></span>
+  </div>
+<!--   <div class="header-list">
+    <ul>
+      <li>Groepen</li>
+      <li>Contact</li>
+      <li>FAQ</li>
+      <li>Smoelenboek</li>
+      <li>Microblog</li>
+      <li>Over ons</li>
+    </ul>
+  </div> -->
+ 
+</header>
+  <hr class="break mobile-hide">
+<!-- End Header -->
+
+<!-- Logo section -->
+<section class="logo-section">
+  <div class="logo-wrapper">
+     <div class="logo-img">
+    <a [routerLink]="['/']"><img src="../assets/elements/Bitmap.png" alt="logo"></a>
+  </div>
+  <div class="logo-text"><span>Cura</span>Nu</div>
+  </div>
+ 
+  <div class="logo-subtitle">Zorg en welzijn <span>Intranet</span></div>
+</section>
+<!-- End Logo section -->
+
+<!-- Title bar section -->
+<section class="title-bar">
+  <div class="title-bar-wrapper">
+    <ul>
+      <li><a href="">ARTIKELEN</a></li>
+      <li><a href="">NIEUWS</a></li>
+      <li><a href="">EVENEMENTEN</a></li>
+      <li><a href="">KWALITEITSHANDBOEK</a></li>
+    </ul>
+
+     <form action="" class="Search">
+    <input class="Search-box" type="search" id="Search-box" autocomplete="off" placeholder="Search">
+    <label class="Search-label" for="Search-box"><img src="../assets/elements/zoeken.png" alt="search"></label>
+  </form>
+  </div>
+
+  <!-- mobile menue -->
+  <div id="cont">
+<div id="menu-fixed">
+<!--   <div class="notes"><p>Expand the menu!</p></div>
+ -->  <a href="#cont">
+    <i class="material-icons back">&#xE314;</i>
+  </a>
+  <a href="#menu-fixed">
+    <div class="logo">
+      <span></span>   
+      <p>CuraNu</p>
+    </div>
+<!--     <p class="pmenu">CuraNu</p>
+ -->  </a>
+  <hr>
+  <ul class="menu">
+    <li><i class="material-icons">info</i><p>ARTIKELEN</p></li>
+    <li><i class="material-icons">language</i><p>NIEUWS</p></li>
+    <li><i class="material-icons">event</i><p>EVENEMENTEN</p></li>
+    <li><i class="material-icons">grade</i><p>KWALITEITSHANDBOEK</p></li>
+  </ul>
+  <i class="material-icons info">&#xE88E;</i>
+</div>
+</div>
+
+</section>
+<!-- End Title bar section -->
+
+<!-- routing -->
+<router-outlet></router-outlet>

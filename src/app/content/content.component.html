@@ -1,0 +1,292 @@
+<ngx-spinner></ngx-spinner>
+
+<section class="three_colums">
+  <section class="three_colums-one">
+    <!-- Contenedor -->
+  <div class="accordion">
+      <ng-container   *ngFor="let fetch of fetchdata.ACCORDIONS">
+
+    <h2 class="accordion__items">{{fetch.name}}</h2>
+    <div class="accordion__content">
+      <h3 class="accordion__content__caption">{{fetch.title}}</h3>
+      <p class="accordion__content__txt">{{fetch.content}}</p>
+    </div>
+  </ng-container>
+</div>
+
+
+<!-- Second panel -->
+ <div class="panel panel-default">
+              <div class="panel-heading flexy">
+                <img class="panel-img" src="../../assets/elements/calendar.png" alt="">
+                <h3 class="panel-title">EVENEMENTEN</h3><ul class="rad-panel-action">
+                                  <li><img src="../../assets/elements/arrow-down.png" class="fa fa-chevron-down"></li><li><img src="../../assets/elements/Shape 2.png" class="fa fa-close">                                  </li>
+                                </ul>
+              </div>
+              <div class="panel-body">
+                <ul  *ngFor="let fetch of fetchdata.EVENEMENTEN">
+                  <li class="flexy"><span class="p-elem1 custom-pad">{{fetch.date}} </span>
+                    <span class="p-elem2">{{fetch.eventname}}</span></li>
+                  <hr class="break">
+                </ul>
+              </div>
+              <div class="panel-footer flexy">
+                <span class="panel-footer_text">Meer evenementen</span>
+                <img class="panel-footer_img" src="../../assets/elements/arrow-right.png" alt="">
+              </div>
+            </div>
+
+<!-- panel 3 -->
+
+   <div class="panel panel-default">
+              <div class="panel-heading flexy">
+                <img class="panel-img" src="../../assets/elements/newspaper.png" alt="">
+                <h3 class="panel-title">NIEUWS</h3><ul class="rad-panel-action">
+                                  <li><img src="../../assets/elements/arrow-down.png" class="fa fa-chevron-down"></li><li><img src="../../assets/elements/Shape 2.png" class="fa fa-close">
+                                  </li>
+                                </ul>
+              </div>
+              <div class="panel-body">
+                <ul  *ngFor="let fetch of fetchdata.NIEUWS">
+                  <li class="flexy"><img class="p-elem1 custom-pad1" src="../../assets/elements/{{fetch.img}}" alt="">
+                    <span class="p-elem2 custom-pad2">
+                      <ul><li class="custom-pad">{{fetch.date}}</li><li>{{fetch.content}}</li></ul>
+                    </span>
+                      <img class="p-elem3" src="../../assets/elements/Bitmap 4.png" alt="">
+
+                  </li>
+                  <hr class="break">
+
+                </ul>
+              </div>
+
+              <div class="panel-footer flexy">
+                <span class="panel-footer_text">Meer nieuws</span>
+                <img class="panel-footer_img" src="../../assets/elements/arrow-right.png" alt="">
+              </div>
+            </div>
+
+
+<!-- panel 4 -->
+ <div class="panel flexy p-top">
+                <span class="panel-footer_text">Widget toevoegen</span>
+                <img class="panel-footer_img" src="../../assets/elements/add.png" alt="">
+              </div>
+
+  </section>
+
+
+
+  <section class="three_colums-two">
+
+    <!-- panel 1 -->
+      <div class="panel panel-default">
+              <div class="panel-heading flexy">
+                <img class="panel-img" src="../../assets/elements/external-link 3.png" alt="">
+                <h3 class="panel-title">DIRECT NAAR</h3><ul class="rad-panel-action">
+                                  <li><img src="../../assets/elements/arrow-down.png" class="fa fa-chevron-down"></li><li><img src="../../assets/elements/Shape 2.png" class="fa fa-close">
+                                  </li>
+                                </ul>
+              </div>
+              <div class="panel-body">
+                <ul  *ngFor="let fetch of fetchdata.DIRECTNAAR">
+                  <li class="flexy"><img class="p-elem1" src="../../assets/elements/{{fetch.img}}" alt="">
+                    <span class="p-elem2">{{fetch.content}}</span></li>
+                  <hr class="break">
+                
+                </ul>
+              </div>
+            </div>
+    
+
+<!-- Second panel -->
+ <div class="panel panel-default">
+              <div class="panel-heading flexy">
+                <img class="panel-img" src="../../assets/elements/calendar.png" alt="">
+                <h3 class="panel-title">BLOGS</h3><ul class="rad-panel-action">
+                                  <li><img src="../../assets/elements/arrow-down.png" class="fa fa-chevron-down"></li><li><img src="../../assets/elements/Shape 2.png" class="fa fa-close">
+                                  </li>
+                                </ul>
+              </div>
+              <div class="panel-body">
+                <ul *ngFor="let fetch of fetchdata.BLOGS">
+                  <li class="flexy">
+                    <img src="../../assets/elements/{{fetch.img}}" class="avatar">
+                      <ul class="user-info"><li>{{fetch.name}}</li><li class="custom-pad">{{fetch.date}}</li></ul>
+                      <div class="user-likes">
+                        <img src="../../assets/elements/Bitmap 4.png" alt="">
+                        <img src="../../assets/elements/Bitmap 4.png" alt="">
+                      </div>
+                    </li>
+                  
+
+                  <li>
+                   <ul class="user-comment"><li>{{fetch.title}}</li><li>{{fetch.body}} </li></ul>
+
+                  </li>
+
+                   </ul>
+              </div>
+              <div class="panel-footer flexy">
+                <span class="panel-footer_text">Meer blogs</span>
+                <img class="panel-footer_img" src="../../assets/elements/arrow-right.png" alt="">
+              </div>
+            </div>
+
+
+            <!-- panel 3 -->
+<div class="panel panel-default">
+              <div class="panel-heading flexy">
+                <img class="panel-img" src="../../assets/elements/kwaliteitshandboek.png" alt="">
+                <h3 class="panel-title">KWALITEITSHANDBOEK</h3><ul class="rad-panel-action">
+                                  <li><img src="../../assets/elements/arrow-down.png" class="fa fa-chevron-down"></li><li><img src="../../assets/elements/Shape 2.png" class="fa fa-close">
+                                  </li>
+                                </ul>
+              </div>
+              <div class="panel-body">
+                <ul *ngFor="let fetch of fetchdata.KWALITEITSHANDBOEK">
+                  <li >                    
+                    <ul class="BOEK-info"><li>{{fetch.title}}</li><li class="custom-pad">{{fetch.body}}</li></ul>
+</li>
+                  <hr class="break">
+                </ul>
+              </div>
+              <div class="panel-footer flexy">
+                <span class="panel-footer_text">Naar kwaliteitshandboek</span>
+                <img class="panel-footer_img" src="../../assets/elements/arrow-right.png" alt="">
+              </div>
+            </div>
+
+
+  <!-- panel 4 -->
+<div class="panel panel-default">
+              <div class="panel-heading flexy">
+                <img class="panel-img" src="../../assets/elements/kwaliteitshandboek.png" alt="">
+                <h3 class="panel-title">PEILINGEN</h3><ul class="rad-panel-action">
+                                  <li><img src="../../assets/elements/arrow-down.png" class="fa fa-chevron-down"></li><li><img src="../../assets/elements/Shape 2.png" class="fa fa-close">
+                                  </li>
+                                </ul>
+              </div>
+              <div class="panel-body" >
+                <div class="empty-panel_text" *ngFor="let fetch of fetchdata.PEILINGEN">
+                    {{fetch.title}}
+                  
+                
+                </div>
+              </div>
+      
+            </div>
+
+
+  <!-- panel 5 -->
+<div class="panel panel-custom">
+              <div class="panel-heading flexy">
+                <img class="panel-img" src="../../assets/elements/external-link 3.png" alt="">
+                <h3 class="panel-title">MIJN LINKS</h3><ul class="rad-panel-action">
+                                  <li><img src="../../assets/elements/arrow-down.png" class="fa fa-chevron-down"></li><li><img src="../../assets/elements/Shape 2.png" class="fa fa-close">
+                                  </li>
+                                </ul>
+              </div>
+              <div class="panel-body">
+                <ul *ngFor="let fetch of fetchdata.MIJNLINKS">
+                  <li >                    
+                    <ul class="BOEK-info"><li>{{fetch}}</li></ul>
+</li>
+                  <hr class="break">
+                </ul>
+              </div>
+             
+            </div>
+
+
+
+  </section>
+
+
+  <section class="three_colums-three three_colums-one_custom">
+<!-- panel 1 -->
+    <div class="widget ">
+      <div class="container">
+        <div class="content">
+          <h2>TELEFOONBOEK</h2>
+        <h4>Vind collega’s op naam, trefwoord, functie, etc.</h4> 
+        </div>
+ 
+      <form action="" class="Search custom_search">
+    <input class="Search-box custom_Search-box" type="search" id="Search-box" autocomplete="off" placeholder="Search">
+    <label class="Search-label custom_Search-label" for="Search-box"><img src="../../assets/elements/zoeken.png" alt="search"></label>
+  </form>
+
+      </div>
+    </div>
+
+<!-- panel 2 -->
+ <div class="panel ">
+              <div class="panel-heading flexy">
+                <img class="panel-img" src="../../assets/elements/Shape.png" alt="">
+                <h3 class="panel-title">MICROBLOG</h3><ul class="rad-panel-action">
+                                  <li><img src="../../assets/elements/arrow-down.png" class="fa fa-chevron-down"></li><li><img src="../../assets/elements/Shape 2.png" class="fa fa-close">
+                                  </li>
+                                </ul>
+              </div>
+              <div class="panel-body">
+                <ul *ngFor="let fetch of fetchdata.MICROBLOG">
+                  <li>
+                   <textarea class="panel-textarea" name="blog" id="blog" cols="30" rows="10"></textarea>
+                    </li>
+                  
+                  <li class="flexy">
+                   <img src="../../assets/elements/Bitmap 2.png" alt="">
+                    <button class="panel-btn">Plaats</button>
+                  </li>
+
+
+                   <li class="flexy">
+                    <img src="../../assets/elements/{{fetch.img}}" class="avatar">
+                      <ul class="user-info"><li>{{fetch.name}}</li><li class="custom-pad">{{fetch.date}}</li></ul>
+                      <div class="user-likes">
+                        <img src="../../assets/elements/Bitmap 4.png" alt="">
+                      </div>
+                    </li>
+              <li class="user_news">{{fetch.body}}</li>
+                <li><img class="panel-img_detail" src="../../assets/elements/unnamed.png" alt=""></li>
+                <li>Lees meer en reacties (0)</li>
+                   </ul>
+              </div>
+              <div class="panel-footer flexy">
+                <span class="panel-footer_text">Toon meer</span>
+                <img class="panel-footer_img" src="../../assets/elements/arrow-right.png" alt="">
+              </div>
+            </div>
+
+
+            <!-- panel 3 -->
+      <div class="panel ">
+              <div class="panel-heading flexy">
+                <img class="panel-img" src="../../assets/elements/groups.png" alt="">
+                <h3 class="panel-title">MIJN GROEPEN</h3><ul class="rad-panel-action">
+                                  <li><img src="../../assets/elements/arrow-down.png" class="fa fa-chevron-down"></li><li><img src="../../assets/elements/Shape 2.png" class="fa fa-close">
+                                  </li>
+                                </ul>
+              </div>
+              <div class="panel-body">
+                <ul *ngFor="let fetch of fetchdata.MIJNGROEPEN">
+                  <li class="flexy"><img class="p-elem1" src="../../assets/elements/{{fetch.img}}" alt="">
+                    <span class="p-elem2">{{fetch.title}}</span></li>
+                  <hr class="break">
+                  
+                </ul>
+              </div>
+              <div class="panel-footer flexy">
+                <span class="panel-footer_text">Meer groepen</span>
+                <img class="panel-footer_img" src="../../assets/elements/arrow-right.png" alt="">
+              </div>
+            </div>
+
+  </section>
+
+</section>
+
+
+
+

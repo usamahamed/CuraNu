@@ -1,0 +1,83 @@
+<div class="contact-container flexy">
+
+  <mat-card class="contact_form">
+    <h2>Contact pagina</h2>
+    <h4>Vertel ons over uw probleem, zodat we u sneller kunnen helpen.</h4>
+      <form class="form" (ngSubmit)="onSubmit(c)" #c="ngForm" >
+        <p><mat-form-field class="full-width">
+        <input matInput #Name="ngModel" placeholder="Naam" id="Name" name="Name" value="Name" ngModel minlength="3" maxlength="250" required>
+        <mat-error *ngIf="Name.touched && Name.invalid">
+            <div *ngIf="Name.errors.required">    
+                 Please Enter your Name
+            </div> 
+            <div *ngIf="Name.errors.minlength">    
+                 Name not less than 3 character
+           </div>
+           <div *ngIf="Name.errors.maxlength">    
+               Name not more than 250 character
+          </div>
+        </mat-error>  
+        
+      </mat-form-field></p>
+      
+    <p><mat-form-field class="full-width">
+        <input matInput #email="ngModel" placeholder="Email" id="email" name="email" value="email" pattern="[^ @]*@[^ @]*" ngModel  required>
+        <mat-error *ngIf="email.touched && email.invalid">
+            <div *ngIf="email.errors.required">    
+                 Please Enter your email
+            </div> 
+            <div *ngIf="email.errors.pattern">    
+                Please Enter vaild email
+           </div>
+        </mat-error>  
+        
+      </mat-form-field></p>
+   
+
+      <!-- -->
+      <p><mat-form-field class="full-width">
+        <input matInput #topic="ngModel" placeholder="topic" id="Onderwerp" name="topic" value="topic" ngModel minlength="3" maxlength="250" required>
+        <mat-error *ngIf="topic.touched && topic.invalid">
+            <div *ngIf="topic.errors.required">    
+                 Please Enter Topic
+            </div> 
+            <div *ngIf="topic.errors.minlength">    
+                Topic not less than 3 character
+           </div>
+           <div *ngIf="topic.errors.maxlength">    
+              Topic not more than 250 character
+          </div>
+        </mat-error>  
+        
+      </mat-form-field></p>
+ 
+      <p>
+        <mat-form-field class="full-width">
+          <textarea matInput #message="ngModel" placeholder="Bericht" value="message" id="message" name="message" ngModel minlength="4" required></textarea>
+             <!-- Error Validation -->
+           <mat-error *ngIf="message.touched && message.invalid">
+            <div *ngIf="message.errors.required">    
+              Please Enter message
+         </div> 
+              <div *ngIf="message.errors.minlength">    
+                message length not less than 4 character
+            </div>
+     </mat-error>  
+   <!--End  Error Validation -->
+        </mat-form-field>
+      </p>
+
+        
+
+    
+
+      <br />
+      <button mat-raised-button type="submit" [disabled]="c.invalid">Verstuur</button>
+
+    </form>
+  </mat-card>
+<div class="contact_img">
+  <img src="../../assets/elements/contact-banner.jpg" alt="">
+</div>
+</div>
+  

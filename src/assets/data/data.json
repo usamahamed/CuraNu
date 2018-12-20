@@ -1,0 +1,123 @@
+{ 
+	"ACCORDIONS":[
+		{
+			"name":"ACCORDION 1",
+			"title":"Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+			"content":"Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttito"
+		
+		},
+		{
+			"name":"ACCORDION 2",
+			"title":"Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+			"content":"Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttito"
+		
+		},
+		{
+			"name":"ACCORDION 3",
+			"title":"Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+			"content":"Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttito"
+		
+		}
+	],
+
+	"EVENEMENTEN":[
+		{
+			"date":"10/12/2016",
+			"eventname": "Zorgmarathon"
+		},
+		{
+			"date":"12/12/2016",
+			"eventname": "Beurs"
+		},
+		{
+			"date":"30/12/2016",
+			"eventname": "Onze zorgevenement"
+		}
+	],
+
+
+	"NIEUWS":[
+		{
+			"img" : "Rectangle 5.png",
+			"date" : "29/02/2016",
+			"content" : "Zorgmarathon"
+		},
+		{
+			"img" : "Rectangle 5 Copy.png",
+			"date" : "29/02/2016",
+			"content" : "VIO erkend als theoretisch goed"
+		},
+		{
+			"img" : "Rectangle 5 Copy 2.png",
+			"date" : "29/02/2016",
+			"content" : "Commissiebrief over nieuwe Wlz"
+		}
+	],
+	"DIRECTNAAR":[
+		{
+			"img":"images.png",
+			"content":"Youforce"
+		},
+		{
+			"img":"Bitmap.png",
+			"content":"MIP-meldingen"
+		},
+		{
+			"img":"Bitmap 3.png",
+			"content":"Topedesk"
+		}
+	],
+
+	"BLOGS":[
+		{
+			"img":"Oval 2 2.png",
+			"name":"Jacob Cobijn",
+			"date":"12/04/2016",
+			"title":"Samenleving",
+			"body":"Het hebben van een partner die positief in het leven staat, is mogelijk goed voor de…."
+		}
+	],
+	"KWALITEITSHANDBOEK":[
+		{
+			"title":"Klachtenprocedure",
+			"body":"bijgewerk / 18-04-2016"
+		},
+		{
+			"title":"Periodieke test gebruikersgroepen",
+			"body":"bijgewerk / 10-02-2016"
+		},
+		{
+			"title":"Dienstrichtlijn tweede niveau",
+			"body":"bijgewerk / 09-05-2015"
+		}
+	],
+	"PEILINGEN":[
+		{"title":"Er zijn geen peilingen beschikbaar."}
+	],
+	"MIJNLINKS":[
+		"Zorggroep.nl",
+		"zorgvisie.nl",
+		"medicalfacts.nl"
+	],
+	"MICROBLOG":[
+		{
+		"img":"Oval 2 2.png",
+		"name":"Ria de Vries",
+		"date":"12/09/2016 - 11:10",
+		"body":"Nieuwe campagne CuraNed gisteren van start gegaan"
+	}
+		
+	],
+	"MIJNGROEPEN":[
+		{
+			"title":"HRM",
+			"img":"Oval 2.png"
+		},
+		{
+			"title":"Marketing & Communicatie",
+			"img":"Oval 2 Copy 2.png"
+		}
+	]
+
+				
+}
