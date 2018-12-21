@@ -22,7 +22,7 @@ This is a simple dynamic homepage for CuraNu website. I use a angular 6 for buli
 - Responsive HomePage with dynamic data ,
 - Simple contact form with some validation built with angular materials,
 - loader until data fetching,
-- Simple frontend routing.
+- Simple frontend routing for Homepage and for contact page
 ### Tech Used:
 -  Angular 6,
 -  ngx-spinner,
