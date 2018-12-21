@@ -46,9 +46,7 @@ This is a simple dynamic homepage for CuraNu website. I use a angular 6 for buli
 
 <!-- [START getstarted] -->
 
-## Deployment
-I Deploy the app on firebase and you can just see the app from this link   <a href=" https://curanu-d8ab1.firebaseapp.com
-">Medisoft Task</a>
+
 
 
 
